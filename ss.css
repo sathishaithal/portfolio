@@ -210,9 +210,30 @@ section .title::after{
     color: crimson;
     background: none;
 }
+/* skills */
+.skills .title::after{
+    content: "On";
+}
+.skills .skills-content .left{
+    width: 45%;
+}
+.education .title::after{
+    content: "Of";
+}
+.education .education-content .left{
+    width: 45%;
+}
+/* project */
+.teams .title::after{
+    content: "On";
+}
+.teams .teams-content .left{
+    width: 45%;
+}
+
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who i am";
 }
 .about .about-content .left{
     width: 45%;
