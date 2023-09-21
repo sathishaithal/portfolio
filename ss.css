@@ -480,7 +480,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+   color: rgb(101, 252, 255);
 }
 .contact .right form .fields{
     display: flex;
