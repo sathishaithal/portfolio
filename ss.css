@@ -386,13 +386,19 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 70%;
 }
 .skills-content .right .php::before{
     width: 60%;
 }
 .skills-content .right .mysql::before{
     width: 70%;
+}
+.skills-content .right .c::before{
+    width: 80%;
+}
+.skills-content .right .cc::before{
+    width: 80%;
 }
 /* teams section styling */
 .teams {
@@ -480,7 +486,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-   color: rgb(101, 252, 255);
+    color: #09d9f9;
 }
 .contact .right form .fields{
     display: flex;
