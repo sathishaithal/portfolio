@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>  
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="ss.css">
     <link rel="stylesheet" href="ss.js">
 </head>
@@ -18,62 +13,77 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
     <nav class="navbar">
         <div class="max-width">
             
-            <div class="logo"><img src="sss.jpg" alt="" width="100" height="30"><a href="#"> Portfo<span>lio</span></a></div>
+            <div class="logo"><img src="img/sss.jpg" alt="" width="100" height="30"><a href="#"> Portfo<span>lio</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
-                <li><a href="#teams" class="menu-btn">Projects</a></li>
+                <li><a href="#prj" class="menu-btn">Projects</a></li>
                 <li><a href="#education" class="menu-btn">Education</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
-            <!-- <div class="menu-btn">
+
+            <div class="menu-btn">
                 <i class="fas fa-bars"></i>
-            </div> -->
+            </div>
+        
         </div>
     </nav>
+
+    
     <!-- home section start -->
+   
     <section class="home" id="home">
         <div class="max-width">
+     
             <div class="home-content">
-                <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    
-                <div class="main">
-	<div class = "border">
-			<h1 class="knockout">Hello, I am <br>Sathish Aithal V S</h1>
-	</div>
-</div>
+                <div class="column left">
+                    <img src="img/sathish.jpeg" alt="">
+                </div>
+                <div class="column right">
+                  
+                <div class="home-content">
+                    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        
+                    <div class="main">
+        <div class = "border">
+                <h1 class="knockout">Hello, I am <br>Sathish Aithal V S</h1>
 
-                <span class="typing"></span></div> 
-               
+                
+                  
+        </div>
+       
+    </div>
             </div>
         </div>
     </section>
+
+    
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
             <h2 class="title">About me</h2>
             <div class="about-content">
-                <div class="column left">
-                    <img src="sathish.jpeg" alt="">
                 </div>
-                <div class="column right">
-                    <div class="text">I'm Sathish and <span class="typing-2"></span></div>
-                    <p>I'm a  dedicated, organized and methodical individual. I have good interpersonal skills, 
+                    <p class="para">I'm Sathish andI'm a  dedicated, organized and methodical individual. I have good interpersonal skills, 
                         am an excellent team worker and am keen and very willing to learn and develop new skills.
                          I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. 
                          I have an active and dynamic approach to work and getting things done. I am determined and decisive. 
                          I identify and develop opportunities.</p>
-                    <!-- <a href="#">Download CV</a> -->
-                </div>
+                </div> 
+                
             </div>
         </div>
     </section>
-   
+
+<!-- <br><br><br><br><br><br><br><br><br> -->
+
     <!-- skills section start -->
+
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">My skills</h2>
@@ -110,13 +120,18 @@
                         <div class="line php"></div>
                     </div>
                 
-                    <!-- <div class="bars">
+                  
+                </div>
+
+
+                <div class="column right">
+                    <div class="bars">
                         <div class="info">
                             <span>Python</span>
                             <span>60%</span>
                         </div>
-                        <div class="line php"></div>
-                    </div> -->
+                        <div class="line python"></div>
+                    </div>
 
                     <div class="bars">
                         <div class="info">
@@ -142,46 +157,65 @@
                         <div class="line cc"></div>
                     </div>
                 </div>
+
+
             </div>
         </div>
         </div>
     </section>
-    <!-- teams section start -->
-     <section class="teams" id="teams">
+
+
+    <!-- prj section start -->
+
+<section class="prj" id="prj">
         <div class="max-width">
             <h2 class="title">My projects</h2>
             <div class="about-content">
-            <div class="logo"><a href="#teams">Academic <span>Project:-</span></a></div>
-              
-            <p>
-                <div class="logo1">Name :<span> Web Portal For Vehicle Insurance</span></div>
-               <div class="logo1">Language of implementation : <span>HTML,CSS,JavaScript,MySql,PHP.</span></div> 
-               <div class="logo1">Operating system : <span>Windows 10.</span></div>
-               <div class="logo1">Description : <span>This project will be able to help the user to pay the insurance for their vehicle from the comfort of their home. 
-                By using this website,it will be useful for everyone to buy vehicle insurance efficiently on the website 
-                and not waste their time standing in a queue insurance company's 
-                office and it also saves any additional cost for the customer.</span></div>
-            </p>
+            <div class="logo"><a href="">Academic <span>Project:-</span></a></div>
+<br>
+            <button class="collapsible"> Web Portal For Vehicle Insurance</button>
+                <div class="content">
+                    <p>
+                        <div class="logo1">Name :<span> Web Portal For Vehicle Insurance</span></div>
+                       <div class="logo1">Language of implementation : <span>HTML,CSS,JavaScript,MySql,PHP.</span></div> 
+                       <div class="logo1">Operating system : <span>Windows 10.</span></div>
+                       <div class="logo1">Description : <span>This project will be able to help the user to pay the insurance for their vehicle from the comfort of their home. 
+                        By using this website,it will be useful for everyone to buy vehicle insurance efficiently on the website 
+                        and not waste their time standing in a queue insurance company's 
+                        office and it also saves any additional cost for the customer.</span></div>
+                    </p>               
+                 </div>
+                 <button class="collapsible">Product Comparison</button>
+                 <div class="content">
+                    <p>
+                        <div class="logo1">Name : <span>Product Comparison</span></div>
+                       <div class="logo1">Language of implementation : <span>HTML,CSS,MySql,PHP</span></div> 
+                       <!-- <div class="logo1">Operating system :<span>Windows 10.</span></div> -->
+                       <div class="logo1">Description : <span>This project is online web-based comparison system for comparing the many products like Phones, 
+                        Tv’s, Tablet’s, Laptop’s etc, sending in queries, and contacting the administrator of the about the company and products.
+                        It also allows the administrator of the company to view the customer’s credentials, reply to the customer on their queries.</span></div>
+                    </p>             
+                  </div>
+<br>
+                  <div class="logo"><a href="#prj">Other <span>Project:-</span></a></div>
 
-            <div class="logo"><a href="#teams">Other <span>Project:-</span></a></div>
-            <p>
-                <div class="logo1">Name : <span> Basic Banking system</span></div>
-               <div class="logo1">Language of implementation : <span>HTML,CSS,MySql,PHP.</span></div> 
-               <!-- <div class="logo1">Operating system :<span>Windows 10.</span></div> -->
-               <div class="logo1">Description :<span>This project Start with creating a dummy data in database for upto 10 customers. 
-                And customers table will have basic fields such as name, email, current balance etc. 
-                Customer's Record will have fields such that sender,reciever,transacted amount this will record all transfers happened.</span></div>
-            </p>
-</li>
-            <p>
-                <div class="logo1">Name : <span>Product Comparison</span></div>
-               <div class="logo1">Language of implementation : <span>HTML,CSS,MySql,PHP</span></div> 
-               <!-- <div class="logo1">Operating system :<span>Windows 10.</span></div> -->
-               <div class="logo1">Description : <span>This project is online web-based comparison system for comparing the many products like Phones, 
-                Tv’s, Tablet’s, Laptop’s etc, sending in queries, and contacting the administrator of the about the company and products.
-                It also allows the administrator of the company to view the customer’s credentials, reply to the customer on their queries.</span></div>
-            </p>
+<br>
+                <button class="collapsible">Basic Banking system</button>
+                <div class="content">
+                    <p>
+                        <div class="logo1">Name : <span> Basic Banking system</span></div>
+                       <div class="logo1">Language of implementation : <span>HTML,CSS,MySql,PHP.</span></div> 
+                       <!-- <div class="logo1">Operating system :<span>Windows 10.</span></div> -->
+                       <div class="logo1">Description :<span>This project Start with creating a dummy data in database for upto 10 customers. 
+                        And customers table will have basic fields such as name, email, current balance etc. 
+                        Customer's Record will have fields such that sender,reciever,transacted amount this will record all transfers happened.</span></div>
+                    </p>
+                </div>
 
+
+                <!-- <button class="collapsible"> </button>
+                <div class="content">
+             -->
 
         </div>
         </div>
@@ -190,7 +224,7 @@
     </section> 
 <br><br><br>
 
-
+<!-- education -->
 <section class="education" id="education">
     <div class="max-width">
         <h2 class="title">Education Details</h2>
@@ -204,8 +238,7 @@
                   <div class="flip-box">
                     <div class="flip-box-inner">
                       <div class="flip-box-front">
-                        <img src="RV.jpg">
-                        <!-- <h2>Front Side</h2> --> 
+                        <img src="img/RV.jpg">
                         <p>SSLC 2017</p>
                       </div>
                       <div class="flip-box-back">
@@ -222,9 +255,8 @@
                   <div class="flip-box">
                     <div class="flip-box-inner">
                       <div class="flip-box-front">
-                        <img src="DRM.jfif">
+                        <img src="img/DRM.jfif">
                         <p>PUC 2019</p>
-                        <!-- <h2>Front Side</h2> -->
                       </div>
                       <div class="flip-box-back">
                         
@@ -239,9 +271,8 @@
                   <div class="flip-box">
                     <div class="flip-box-inner">
                       <div class="flip-box-front">
-                        <img src="bihe.jpg">
+                        <img src="img/bihe.jpg">
                         <p>BCA 2022</p>
-                        <!-- <h2>Front Side</h2> -->
                       </div>
                       <div class="flip-box-back">
                         
@@ -256,9 +287,8 @@
                   <div class="flip-box">
                     <div class="flip-box-inner">
                       <div class="flip-box-front">
-                        <img src="smvit.jfif">
+                        <img src="img/smvit.jfif">
                         <p>MCA</p>
-                        <!-- <h2>Front Side</h2> -->
                       </div>
                       <div class="flip-box-back">
                        
@@ -327,7 +357,8 @@
 ></a>
 
 <!-- Linkedin -->
-<a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/in/sathishaithalvs1818" role="button"><i class="fab fa-linkedin-in fa-2x"></i>
+<a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/in/sathishaithalvs1818" role="button"
+><i class="fab fa-linkedin-in fa-2x"></i>
                 </a>
 
 <!-- Github -->
@@ -351,6 +382,8 @@
     <footer>
         <span>Created By <a href="">Sathishvs</a> 
     </footer>
-    <!-- <script src="script.js"></script> -->
+    <script src="ss.js"></script>
+    
+ 
 </body>
 </html>
