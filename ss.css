@@ -6,6 +6,8 @@
     color: white;
     background-color: rgb(0, 0, 0);
     text-decoration: none;
+    font-family: "Audiowide", sans-serif;
+
 }
 html{
     scroll-behavior: smooth;
@@ -32,9 +34,9 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.home,.about .services, .skills, .prj, .contact,.education, footer{
+/* .home,.about .services, .skills, .prj, .contact,.education, footer{
     font-family: 'Poppins', sans-serif;
-}
+} */
 .home .home-content,
 .services .serv-content,
 .skills .skills-content,
