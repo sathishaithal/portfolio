@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap'); */
 *{
     margin: 0;
     padding: 0;
@@ -6,8 +6,7 @@
     color: white;
     background-color: rgb(0, 0, 0);
     text-decoration: none;
-    font-family: "Audiowide", sans-serif;
-
+    font-family: "Trirong", serif;
 }
 html{
     scroll-behavior: smooth;
@@ -34,7 +33,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-/* .home,.about .services, .skills, .prj, .contact,.education, footer{
+/* .home,.about .services, .para,.skills, .prj, .contact,.education, footer{
     font-family: 'Poppins', sans-serif;
 } */
 .home .home-content,
@@ -735,5 +734,4 @@ footer span a:hover{
 .icons{
     list-style-type: none;
 }
-
 
