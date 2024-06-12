@@ -13,7 +13,6 @@
 html{
     scroll-behavior: smooth;
 }
-/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -39,7 +38,7 @@ section{
     font-family: 'Poppins', sans-serif;
 } */
 .home .home-content,
-.services,
+.services .serv-content,
 .skills .skills-content,
 
 /* .about .about-content,
@@ -160,7 +159,7 @@ section .title::after{
 }
 
 
-/* home section */
+/* home section  */
 .na{
     background-image: linear-gradient(43deg, #383735 0%, #12b9b9 46%, #0a0a09 100%); 
 }
@@ -245,7 +244,7 @@ section .title::after{
 
 
 
-/* skills section styling */
+/* skills section  */
 
 .skills .title::after{
     content: "On";
@@ -316,6 +315,8 @@ section .title::after{
 
 
 
+
+
 /* Project Section */
 
 .prj .title::after{
@@ -325,10 +326,13 @@ section .title::after{
     margin-top: 80px;
 
 }
+.prj .prj-content .left{
+    width: 50%;
+}
 
 .prj {
     display: inline-block;
-    /* background: black; */
+    background: black;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 20px;
@@ -336,7 +340,7 @@ section .title::after{
     text-align: justify;
     /* margin-left: 7%; */
     padding: 10px 30px;
-    margin-top: 150px;
+    margin-top: 20px;
     border-radius: 6px;
     transition: all 0.3s ease;
     width: 100%;
@@ -372,7 +376,7 @@ section .title::after{
 }
 
 .card:hover {
-    box-shadow: rgb(0, 0, 0) 0px 5px 20px,
+    box-shadow: rgb(0, 242, 255) 0px 10px 20px,
                 rgba(255, 0, 0, 0.23) 0px 6px 6px,
                 inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
                 inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -443,9 +447,6 @@ section .title::after{
 
 /* Responsive  */
 @media (max-width: 768px) {
-    .prj .title{
-        margin-top: 10px;
-    }
     .prj {
         margin-left: 0;
         padding: 10px 15px;
@@ -474,7 +475,7 @@ section .title::after{
 
 
 
-/* education section  */
+
 
 .education .title::after{
     content: "Of";
@@ -520,6 +521,7 @@ section .title::after{
     cursor: pointer;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
     .ed-container {
         grid-template-columns: 1fr; 
@@ -529,19 +531,19 @@ section .title::after{
 @media (max-width: 480px) {
     .education-title {
         font-size: 22px; 
+    }
 
     .education-details {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
     .education-box {
-        padding: 15px;
+        padding: 15px; 
     }
 }
 
 
 
-/* contact */
 .contact .title::after{
     content: "get in touch";
 }
@@ -597,7 +599,7 @@ footer span a:hover{
 }
 
 
-/* responsive media */
+/* responsive  */
 @media (max-width: 1104px) {
     .home .home-content .left img{
         height: 350px;
@@ -657,7 +659,15 @@ footer span a:hover{
     .home .home-content .right{
         flex: 100%;
     }
-    
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 @media (max-width: 690px) {
     .max-width{
@@ -672,7 +682,9 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-   
+    .services .serv-content .card{
+        width: 100%;
+    }
 }
 @media (max-width: 500px) {
     .home .home-content .text-2{
@@ -694,24 +706,7 @@ footer span a:hover{
         line-height: 38px;
     }
 }
-	@media (max-width: 710px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .contact .contact-content .sub-title{
-        font-size: 15px;
-        width: 150px;
-    }
-    
-    .contact .contact-content .text{
-        font-size: 20px;
-    }
-    .contact .contact-content a{
-        font-size: 20px;
-    }
-   
-}
 .icons{
     list-style-type: none;
 }
-}
+
