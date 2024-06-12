@@ -39,7 +39,7 @@ section{
     font-family: 'Poppins', sans-serif;
 } */
 .home .home-content,
-.services .serv-content,
+.services,
 .skills .skills-content,
 
 /* .about .about-content,
@@ -160,7 +160,7 @@ section .title::after{
 }
 
 
-/* home section styling */
+/* home section */
 .na{
     background-image: linear-gradient(43deg, #383735 0%, #12b9b9 46%, #0a0a09 100%); 
 }
@@ -315,23 +315,20 @@ section .title::after{
 }
 
 
-/* project */
-/* 
-
-
 
 /* Project Section */
 
 .prj .title::after{
     content: "on";
 }
-.prj .prj-content .left{
-    width: 50%;
+.prj .title{
+    margin-top: 80px;
+
 }
 
 .prj {
     display: inline-block;
-    background: black;
+    /* background: black; */
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 20px;
@@ -339,13 +336,12 @@ section .title::after{
     text-align: justify;
     /* margin-left: 7%; */
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-top: 150px;
     border-radius: 6px;
     transition: all 0.3s ease;
     width: 100%;
 }
 
-/* Container for the cards */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -356,7 +352,6 @@ section .title::after{
     width: 100%;
 }
 
-/* Individual card styling */
 .card {
     position: relative;
     width: 100%;
@@ -376,16 +371,14 @@ section .title::after{
     overflow: hidden;
 }
 
-/* Card hover effect */
 .card:hover {
-    box-shadow: rgb(0, 242, 255) 0px 10px 20px,
+    box-shadow: rgb(0, 0, 0) 0px 5px 20px,
                 rgba(255, 0, 0, 0.23) 0px 6px 6px,
                 inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
                 inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
     border: 5px solid #00f2ff;
 }
 
-/* Card title styling */
 .card-title {
     margin: 0;
     font-size: 18px;
@@ -396,7 +389,6 @@ section .title::after{
     cursor: default;
 }
 
-/* Card description styling */
 .card-des {
     margin: 0;
     font-size: 15px;
@@ -416,7 +408,6 @@ section .title::after{
     max-height: none;
 }
 
-/* Card text styling */
 .card-text {
     position: absolute;
     margin: 0;
@@ -436,25 +427,25 @@ section .title::after{
     cursor: pointer;
 }
 
-/* Hover effect to show card text */
 .card:hover > .card-text {
     opacity: 1;
 }
 
-/* Link styling */
 .prj-link {
     color: #00fbff;
 }
 .prj-link:hover{
     color: rgb(255, 0, 0);
 }
-/* Year styling */
 .year {
     color: chocolate;
 }
 
-/* Responsive adjustments */
+/* Responsive  */
 @media (max-width: 768px) {
+    .prj .title{
+        margin-top: 10px;
+    }
     .prj {
         margin-left: 0;
         padding: 10px 15px;
@@ -483,8 +474,7 @@ section .title::after{
 
 
 
-/* Base styling for education boxes */
-/* education section styling */
+/* education section  */
 
 .education .title::after{
     content: "Of";
@@ -523,7 +513,6 @@ section .title::after{
     background-color: transparent;
 }
 
-/* Hover effect */
 .education-box:hover {
     border-color: #007bff;
     transform: translateY(-5px);
@@ -531,24 +520,22 @@ section .title::after{
     cursor: pointer;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .ed-container {
-        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 @media (max-width: 480px) {
     .education-title {
-        font-size: 22px; /* Smaller font size for very small screens */
-    }
+        font-size: 22px; 
 
     .education-details {
-        font-size: 18px; /* Smaller font size for very small screens */
+        font-size: 18px; 
     }
 
     .education-box {
-        padding: 15px; /* Adjust padding for very small screens */
+        padding: 15px;
     }
 }
 
@@ -592,7 +579,7 @@ section .title::after{
 }
 
 
-/* footer section styling */
+/* footer section  */
 footer{
     background: #000000;
     padding: 15px 23px;
@@ -610,7 +597,7 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
+/* responsive media */
 @media (max-width: 1104px) {
     .home .home-content .left img{
         height: 350px;
@@ -670,15 +657,7 @@ footer span a:hover{
     .home .home-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
+    
 }
 @media (max-width: 690px) {
     .max-width{
@@ -693,9 +672,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
-        width: 100%;
-    }
+   
 }
 @media (max-width: 500px) {
     .home .home-content .text-2{
@@ -720,5 +697,4 @@ footer span a:hover{
 .icons{
     list-style-type: none;
 }
-
-
+}
