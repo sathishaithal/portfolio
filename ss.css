@@ -694,6 +694,23 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+	@media (max-width: 710px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .contact .contact-content .sub-title{
+        font-size: 15px;
+        width: 150px;
+    }
+    
+    .contact .contact-content .text{
+        font-size: 20px;
+    }
+    .contact .contact-content a{
+        font-size: 20px;
+    }
+   
+}
 .icons{
     list-style-type: none;
 }
