@@ -266,11 +266,92 @@ section .title::after {
   content: "Who i am";
 }
 .about .para {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  justify-content: center;
   /* margin-top: 150px; */
 }
+.about-grid {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  text-align: center;
+  flex-wrap: wrap; 
+}
+
+.about-item {
+  background: transparent; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 204, 255, 0.1); 
+  transition: transform 0.3s ease-in-out;
+  flex: 0 1 600px;
+  margin: 0 10px; 
+}
+
+.about-item:hover {
+  transform: translateY(-10px);
+}
+
+.small-image {
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%; 
+  margin-bottom: 15px; 
+  object-fit: cover; 
+}
+.about-item ul {
+  list-style-type: none; 
+  margin: 0; 
+}
+
+.about-item li {
+  background: #000000;
+  padding: 10px 15px; 
+  margin: 5px 0; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: background 0.3s ease; 
+}
+
+.about-item li:hover {
+  background: #00ffdd; 
+}
+.project-button {
+  display: inline-block; 
+  padding: 10px 20px;
+  margin-top: 25px; 
+  background: transparent;  
+  color: #0d47a1; 
+  border: 2px solid #0d47a1;
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-button:hover {
+  background: #0d47a1; 
+  color: white; 
+}
+
+/* .small-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+}
+
+.projects, .experience {
+  width: 45%; 
+}
+
+h3 {
+  color: #333;
+} */
 
 
 /* skills section  */
