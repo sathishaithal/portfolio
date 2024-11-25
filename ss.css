@@ -625,11 +625,24 @@ h3 {
   }
 }
 
-.contact .title::after {
+ .contact .title::after {
   content: "get in touch";
 }
+.contact {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.text1{
+margin-left: 100px;
+font-size: x-large;
+color:rgb(255, 101, 101) ;
+font-weight: 800;
+}
 .contact .contact-content .column {
-  width: calc(50% - 30px);
+  width: calc(100% - 30px);
 }
 .contact .contact-content .text {
   font-size: 20px;
@@ -659,7 +672,7 @@ h3 {
 }
 .contact .contact-content .info .sub-title {
   color: #09d9f9;
-}
+} 
 
 /* footer section  */
 footer {
@@ -783,6 +796,22 @@ footer span a:hover {
     line-height: 38px;
   }
 }
+
 .icons {
   list-style-type: none;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #333; /* Default icon color */
+  font-size: 30px; /* Icon size */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.social-icons a:hover {
+  color: #1da1f2; /* Twitter/X blue color */
+  transform: scale(1.2); /* Slight zoom on hover */
 }
